@@ -1,0 +1,32 @@
+
+
+ROBOTICS
+HOMEWORK 1
+Student Name: Sabrina Cara
+Student Number: 150160914
+
+This Homework consists in Making the turtlebot robot run around the rooms and follow the walls without hitting them. 
+
+I have chosen to implement this homework in CPP code. The algorithms of my code is as follows:
+
+1. Robot scans his middle distance, leftmost and rightmost distance. 
+I put a threshold value for the middle distance as well as leftmost and rightmost distance.
+
+2. If robots middle is smaller than threshold distance, robot has to do the following:
+
+	- If left is bigger than right, it goes a little back and turns left.
+	- If left is smaller than right, it goes a little back and turns right.
+
+During these conditions, it also checks for nan conditions.
+
+3. If the wall the robot is going towards is not straight but inclined it does the following:
+
+	- If middle distance is bigger than threshold, it does the following:
+
+		- If left is smaller than the other set threshold for left and right 			wall, it goes right without going back.
+	
+		- If right is smaller than other set threshold, it goes left without 			going back.
+
+		- If none of these cases is correct, and middle distance continues 			being bigger than threshold, it keeps going straight.
+
+ 
